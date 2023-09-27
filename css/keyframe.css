@@ -1,0 +1,98 @@
+body {
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.gass, .sky, .road{
+    position: relative;
+}
+
+.sky {
+    background: skyblue;
+    height: 200px;
+    /* width: 50%; */
+}
+
+.grass {
+    background: rgb(55, 134, 55);
+    height: 269px;
+}
+
+.road {
+    height: 200px;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.road img {
+    width: 24%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: -190px;
+    margin-left: -51px;
+    animation-name: run;
+    animation-duration: 5s;
+   
+    
+   
+}
+
+.grass img {
+    width: 100%;
+    animation-iteration-count: infinite;
+    animation: pulaste 1s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes run {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(2000px);
+    }
+   
+
+}
+
+@keyframes pulaste {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .4;
+    }
+}
+
+
+
+  
+
+
+
+
+
+
+
+
